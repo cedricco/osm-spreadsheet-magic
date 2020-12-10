@@ -1,3 +1,5 @@
+# while true; do python scrap_sheet_to_umap.py && git add-co -m 'update layers' && git push origin; sleep 60; done
+
 from __future__ import print_function
 import random
 import re
