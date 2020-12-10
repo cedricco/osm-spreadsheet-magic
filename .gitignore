@@ -1,3 +1,7 @@
+utility_files/credentials.json
+utility_files/token.pickle
+utility_files/geoloc_adresses.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

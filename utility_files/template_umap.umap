@@ -1,0 +1,93 @@
+{
+  "type": "umap",
+  "uri": "https://umap.openstreetmap.fr/en/map/test-scrap-tableau-defrichage_533833",
+  "properties": {
+    "easing": true,
+    "tilelayersControl": true,
+    "measureControl": true,
+    "embedControl": true,
+    "editinosmControl": null,
+    "fullscreenControl": true,
+    "locateControl": true,
+    "searchControl": true,
+    "datalayersControl": true,
+    "zoomControl": true,
+    "showLabel": null,
+    "slideshow": {
+      "delay": 29000,
+      "active": true
+    },
+    "captionBar": true,
+    "zoomTo": 7,
+    "popupShape": "Panel",
+    "limitBounds": {},
+    "tilelayer": {
+      "tms": false,
+      "name": "OSM Positron (Carto)",
+      "maxZoom": 20,
+      "minZoom": 0,
+      "attribution": "Map tiles by [[http://cartodb.com/attributions#basemaps|CartoDB]], under [[https://creativecommons.org/licenses/by/3.0/|CC BY 3.0]]. map data © [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL ",
+      "url_template": "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
+    },
+    "licence": "",
+    "description": "",
+    "name": "🚲 Où va l'AlterTour ??? 🚲",
+    "onLoadPanel": "databrowser",
+    "displayPopupFooter": false,
+    "miniMap": true,
+    "moreControl": false,
+    "scaleControl": true,
+    "scrollWheelZoom": true,
+    "zoom": 7
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -2.0054547337466437,
+      48.520177418864186
+    ]
+  },
+  "layers": [
+    {
+      "type": "FeatureCollection",
+      "features": [],
+      "_umap_options": {
+        "displayOnLoad": true,
+        "browsable": true,
+        "name": "Réponse positive",
+        "remoteData": {},
+        "iconClass": "Circle",
+        "color": "Navy",
+        "id": 1509989
+      }
+    },
+    {
+      "type": "FeatureCollection",
+      "features": [],
+      "_umap_options": {
+        "displayOnLoad": true,
+        "browsable": true,
+        "remoteData": {},
+        "name": "Incontournables 7 jours",
+        "color": "CornflowerBlue",
+        "stroke": false,
+        "weight": "4",
+        "id": 1509996
+      }
+    },
+    {
+      "type": "FeatureCollection",
+      "features": [],
+      "_umap_options": {
+        "displayOnLoad": true,
+        "browsable": true,
+        "remoteData": {},
+        "name": "Incontournables 3 jours",
+        "color": "DeepPink",
+        "id": 1510013,
+        "opacity": "0.5",
+        "fillOpacity": "0.3"
+      }
+    }
+  ]
+}
