@@ -133,11 +133,11 @@ def main():
                     }
                 })
 
-    with open('days_3_features.umap', 'w') as outfile:
+    with open('days_3_features.geojson', 'w') as outfile:
         json.dump(days_3_features, outfile)
-    with open('days_7_features.umap', 'w') as outfile:
+    with open('days_7_features.geojson', 'w') as outfile:
         json.dump(days_7_features, outfile)
-    with open('bonus_features.umap', 'w') as outfile:
+    with open('bonus_features.geojson', 'w') as outfile:
         json.dump(bonus_features, outfile)
 
 
