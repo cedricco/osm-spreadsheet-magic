@@ -114,9 +114,12 @@ def main():
 *Site oueb* %s
 *Sur les rézos* %s
 
-**Description**
+%s**Description**
 %s
-                """ % ("{{%s}}\n" % url_image if url_image else "", hashtag, row[22] or "A remplir !", row[23] or "A remplir !", row[24] or "A remplir !", row[18] if row[18] else "A remplir !", row[19] if row[19] else "A remplir !", row[11])
+
+**Retours**
+%s
+                """ % ("{{%s}}\n" % url_image if url_image else "", hashtag, row[22] or "A remplir !", row[23] or "A remplir !", row[24] or "A remplir !", row[18] if row[18] else "A remplir !", row[19] if row[19] else "A remplir !", "**Date de passage:** %s\n\n" % row[12] if row[12] else "", row[11], row[9])
 
                 feature_collection["features"].append({
                     "type": "Feature",
