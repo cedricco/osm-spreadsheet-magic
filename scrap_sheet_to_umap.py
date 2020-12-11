@@ -94,9 +94,9 @@ def main():
                     with open('utility_files/geoloc_adresses.json', 'w') as saved_geoloc_file:
                         json.dump(geoloc, saved_geoloc_file)
             if not coords:
-                coords = [-4.6561 + random.random() * 1.5, 49.1150]
+                coords = [-5.0 + random.random() * 3, 49 + 0.5 * random.random()]
             elif coords[0] < -5.4756155192 or coords[0] > 3.7230954436 or coords[1] > 50.359718657 or coords[1] < 46.6907131609:
-                coords = [-4.6561 + random.random() * 1.5, 49.2]
+                coords = [-5.0 + random.random() * 3, 49 + 0.5 * random.random()]
             emoji = row[26].split(" ")[0] if row[26] else ""
             url_image = row[27]
             if row[21] in [DAYS_3, DAYS_7, BONUS]:
