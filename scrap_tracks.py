@@ -1,6 +1,7 @@
 # while true; do python scrap_tracks.py && git add-co -m 'update tracks' && git push origin; sleep 120; done
 # curl https://umap.openstreetmap.fr/en/map/dessin-de-parcours-n2_536295 | grep -A 2 "Parcours"
 
+# https://docs.google.com/spreadsheets/d/1C-D2wkA4ht4svC6ncN0bVmt88w05G-b-0OtCrHNhA8k/edit#gid=0
 
 import geopandas
 from shapely.geometry import Point
