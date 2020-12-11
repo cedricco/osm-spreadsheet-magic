@@ -14,13 +14,7 @@ TRACK_LAYERS = [geopandas.read_file("http://umap.openstreetmap.fr/en/datalayer/%
 geometries = geopandas.GeoDataFrame()
 
 for track_layer in TRACK_LAYERS:
-    filtered_layer = []
-    for geom in track_layer.iterfeatures():
-        if geom.get("geometry", {}).get("type") == "LineString":
-            
-        import ipdb; ipdb.set_trace()
-        geometries = geometries.append(geopandas.GeoDataFrame(geom))
-
+    geometries = geometries.append(geopandas.GeoDataFrame.from_features(track_layer))
 
 if not geometries.empty:
     geometries.to_file("tracks.geojson", driver='GeoJSON')
