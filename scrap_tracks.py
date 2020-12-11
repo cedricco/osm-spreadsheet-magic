@@ -1,14 +1,17 @@
-# curl https://umap.openstreetmap.fr/en/map/dessin-de-parcours-n2_536295 | grep -A 2 "\"name\":"
-
-# https://umap.openstreetmap.fr/en/map/dessin-de-parcours-n1_536288 => 1518329
-# https://umap.openstreetmap.fr/en/map/dessin-de-parcours-n2_536295 => 1518350
+# # while true; do python scrap_tracks.py && git add-co -m 'update tracks' && git push origin; sleep 600; done
+# curl https://umap.openstreetmap.fr/en/map/dessin-de-parcours-n2_536295 | grep -A 2 "Parcours"
 
 
 import geopandas
 from shapely.geometry import Point
 
 LAYER_IDS = [
-    1518329, 1518350, 1519023, 1519045, 1519051
+    1518329, 1518350, 1519023, 1519045, 1519051, 1519063, 1519067, 1519074, 1519081, 1519089,
+    1519096, 1519129, 1519134, 1519139, 1519144, 1519160, 1519164, 1519168, 1519172, 1519176,
+    1519181, 1519185, 1519189, 1519193, 1519197, 1519202, 1519207, 1519211, 1519215, 1519219,
+    1519224, 1519228, 1519233, 1519237, 1519247, 1519251, 1519257, 1519261, 1519265, 1519269,
+    1519274, 1519279, 1519303, 1519309, 1519313, 1519317, 1519322, 1519326, 1519335, 1519339,
+    1519344, 1519348, 1519352, 1519356, 1519360, 1519364, 1519368, 1519373, 1519402, 1519406,
 ]
 
 TRACK_LAYERS = [geopandas.read_file("http://umap.openstreetmap.fr/en/datalayer/%s/" % id) for id in LAYER_IDS]
