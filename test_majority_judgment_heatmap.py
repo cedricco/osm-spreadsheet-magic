@@ -9,17 +9,17 @@
 # "displayOnLoad": true
 # }
 
-# Commencer avec 2 cartes à merger
+# https://umap.openstreetmap.fr/en/map/dessin-de-parcours-n1_536288 => 1518329
 # https://umap.openstreetmap.fr/en/map/dessin-de-parcours-n2_536295
-# https://umap.openstreetmap.fr/en/map/dessin-de-parcours-n1_536288
+
 
 import geopandas
 import random
 from shapely.geometry import Point
 
-LAYER
+LAYER_IDS = [1518329, 1518350]
 
-likes = geopandas.read_file("http://umap.openstreetmap.fr/en/datalayer/1506234/")
+track_layers = [geopandas.read_file("http://umap.openstreetmap.fr/en/datalayer/%s/" % id) for id in LAYER_IDS]
 
 random_points_left = []
 random_points_right = []
