@@ -7,7 +7,9 @@
 import geopandas
 from shapely.geometry import Point
 
-LAYER_IDS = [1518329, 1518350]
+LAYER_IDS = [
+    1518329, 1518350, 1519023, 1519045, 1519051
+]
 
 TRACK_LAYERS = [geopandas.read_file("http://umap.openstreetmap.fr/en/datalayer/%s/" % id) for id in LAYER_IDS]
 
