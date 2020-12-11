@@ -11,11 +11,12 @@ LAYER_IDS = [1518329, 1518350]
 
 TRACK_LAYERS = [geopandas.read_file("http://umap.openstreetmap.fr/en/datalayer/%s/" % id) for id in LAYER_IDS]
 
-geometries = []
+geometries = geopandas.GeoDataFrame()
 
 for track_layer in TRACK_LAYERS:
     for geom in track_layer.itertuples():
-        geometries.append(geom)
+        import ipdb; ipdb.set_trace()
+        geometries.append(geopandas.GeoDataFrame(geom))
 
-gdf = geopandas.GeoDataFrame({'geometry': geometries}, crs="EPSG:4326")
-gdf.to_file("tracks.geojson", driver='GeoJSON')
+if not geometries.empty:
+    geometries.to_file("tracks.geojson", driver='GeoJSON')
