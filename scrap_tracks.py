@@ -1,4 +1,4 @@
-# # while true; do python scrap_tracks.py && git add-co -m 'update tracks' && git push origin; sleep 600; done
+# while true; do python scrap_tracks.py && git add-co -m 'update tracks' && git push origin; sleep 120; done
 # curl https://umap.openstreetmap.fr/en/map/dessin-de-parcours-n2_536295 | grep -A 2 "Parcours"
 
 
