@@ -23,7 +23,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 SAMPLE_SPREADSHEET_ID = '1xITn4DPQDIlT_qiO51JpM_e7PiHQIZkX0zygcE3AWGY'
 SAMPLE_RANGE_NAME = 'Alternatives!A1:AB'
 COLUMN_NAMES = ['', 'Région', 'Département', 'alternative', 'Commune', """Adresse postale 
-⚠️ + latitude/longitude si PB affichage carte (passer souris pour + d'infos)""", 'Initié par...          (prénom : date)', 'source', 'Contacté par...          (prénom : date)\nRelance le...', 'retour', 'Thèmatique', 'descriptif', 'date de passage', 'Prénom', 'Nom',
+⚠️ + latitude/longitude si PB affichage carte (passer souris pour + d'infos)""", 'Initié par...          (prénom : date)', 'source', 'Contacté par...          (prénom : date)\nRelance le...', 'retours', 'Thèmatique', 'descriptif', 'date de passage', 'Prénom', 'Nom',
                 'Mail', 'Téléphone', 'Portable', 'site internet', 'Réseaux sociaux', 'Rédacteur recueil', 'Carto plénière: incontournable ?', 'Carto plénière: punchline 1', 'Carto plénière: punchline 2', 'Carto plénière: punchline 3', 'Carto plénière: hashtag', 'Carto plénière: classification', 'Carto plénière: image']
 
 DAYS_3 = "Essentiels 3 jours"
