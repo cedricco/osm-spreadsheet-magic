@@ -26,10 +26,10 @@ TRACK_LAYERS = []
 
 for (index, id) in enumerate(LAYER_IDS):
     try:
-        print("PB avec %s" % (index + 1))
         TRACK_LAYERS.append(geopandas.read_file("http://umap.openstreetmap.fr/en/datalayer/%s/" % id))
-    except:
-        pass
+    except Exception:
+        print("PB avec %s" % (index + 1))
+
 
 geometries = geopandas.GeoDataFrame()
 
