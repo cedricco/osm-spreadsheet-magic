@@ -12,7 +12,6 @@ import geopandas
 from shapely.geometry import Point
 
 # 25e: 1519197
-
 # 39e: 1519265
 
 LAYER_IDS = [
