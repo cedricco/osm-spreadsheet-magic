@@ -15,12 +15,19 @@ LAYER_IDS = [
     1519344, 1519348, 1519352, 1519356, 1519360, 1519364, 1519368, 1519373, 1519402, 1519406,
 ]
 
-TRACK_LAYERS = [geopandas.read_file("http://umap.openstreetmap.fr/en/datalayer/%s/" % id) for id in LAYER_IDS]
+
+
+TRACK_LAYERS = []
+
+for (index, id) in enumerate(LAYER_IDS):
+    print("PB avec %s" % (index + 1))
+    TRACK_LAYERS.append(geopandas.read_file("http://umap.openstreetmap.fr/en/datalayer/%s/" % id))
 
 geometries = geopandas.GeoDataFrame()
 
 for track_layer in TRACK_LAYERS:
     geometries = geometries.append(geopandas.GeoDataFrame.from_features(track_layer))
+    print(track_layer)
 
 if not geometries.empty:
     geometries.to_file("tracks.geojson", driver='GeoJSON')
